@@ -1,0 +1,70 @@
+.specifications-container {
+  width: 500px;
+  font-family: "Montserrat", sans-serif;
+  margin: 32px auto;
+}
+
+.specifications-container .device-name {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+.specifications-container h3 {
+  font-size: 13px;
+  text-transform: uppercase;
+  padding: 8px 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.specifications-container h3 .icon svg {
+  height: 16px;
+}
+
+.specifications-container h3.active .icon {
+  background: #fff;
+  color: red;
+}
+
+.specifications-container .icon {
+  background: red;
+  border: 1px solid red;
+  color: #fff;
+  border-radius: 50%;
+  padding: 4px;
+  display: flex;
+  transition: all 200ms ease;
+}
+
+.specifications-container h3.active .icon {
+  rotate: 180deg;
+}
+
+.specifications-container table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #eee;
+  margin-bottom: 8px;
+  display: none;
+}
+
+.specifications-container table th {
+  text-align: left;
+  font-size: 14px;
+  padding: 16px;
+  border: 1px solid #ddd;
+}
+
+.specifications-container table td {
+  font-size: 16px;
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.specifications-container table tr:nth-child(even) {
+  background: #eee;
+}
